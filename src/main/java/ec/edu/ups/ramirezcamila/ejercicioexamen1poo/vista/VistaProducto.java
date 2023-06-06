@@ -27,7 +27,7 @@ public class VistaProducto {
         System.out.println("Descripcion: ");
         String descripcion = entrada.nextLine();
         System.out.println("Precio: ");
-        String precio = entrada.nextLine();
+        double precio = entrada.nextDouble();
                 
         Producto producto = new Producto(codigo, nombre, descripcion, precio);
         return producto;
@@ -44,7 +44,7 @@ public class VistaProducto {
         System.out.println("Descripcion: ");
         String descripcion = entrada.nextLine();
         System.out.println("Precio: ");
-        String precio = entrada.nextLine();
+        double precio = entrada.nextDouble();
         
         return new Producto(codigo, nombre, descripcion, precio);
     }
@@ -53,6 +53,6 @@ public class VistaProducto {
         System.out.println("Ingrese el codigo del producto que desea eliminar: ");
         String codigo1 = entrada.nextLine();
         
-        return new Producto(0, "", "", "");
+        return new Producto(0, "", "", 0.00);
     }
 }
